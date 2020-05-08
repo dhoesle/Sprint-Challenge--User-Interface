@@ -29,7 +29,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    overflow-x:hidden !important;
+
 }
 ol, ul {
 	list-style: none;
@@ -49,15 +51,19 @@ table {
 
 * {
     box-sizing: border-box;
+    border: 1px  gray !important;
+
 }
 
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%
+
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -66,10 +72,7 @@ p {
     line-height: 1.4;
 }
 
-.container {
-    width: 800px;
-    margin: 0 auto;
-}
+
 
 .top-content {
     display: flex;
@@ -79,6 +82,42 @@ p {
     border-bottom: 1px dashed black;
 }
 
+nav{
+    width: 45%;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin:1% 1% 0% 1%;
+}
+nav img {
+    display:flex;
+
+}
+nav .navButtons {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 77%;
+}
+nav .navButtons a{
+    display:flex;
+    padding: 4%;
+    justify-content:space-around;
+    text-decoration:none;
+    color:black;
+}
+header {
+    display:flex;
+    justify-content:center;
+}
+.imageContainer {
+    display:flex;
+    justify-content:center;
+    margin: 1% 0% 1% 0%;
+}
+.container {
+    padding:0 27%
+}
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
@@ -101,10 +140,100 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box1{
     width: 12.5%;
     height: 100px;
-    background: black;
+    background: teal;
+    margin: 2% 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box2{
+    width: 12.5%;
+    height: 100px;
+    background: gold;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box3{
+    width: 12.5%;
+    height: 100px;
+    background: cadetblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box4{
+    width: 12.5%;
+    height: 100px;
+    background: coral;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box5{
+    width: 12.5%;
+    height: 100px;
+    background: crimson;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box6{
+    width: 12.5%;
+    height: 100px;
+    background: forestgreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box7{
+    width: 12.5%;
+    height: 100px;
+    background: darkorchid;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box8{
+    width: 12.5%;
+    height: 100px;
+    background: hotpink;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box9{
+    width: 12.5%;
+    height: 100px;
+    background: indigo;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box10{
+    width: 12.5%;
+    height: 100px;
+    background: dodgerblue;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -137,10 +266,215 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width:800px){
+    nav{
+        width: 90%;
+        margin:3% 2% 1% 1%;
+    }
+    nav .navButtons {
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        width: 70%;
+    }
+    nav .navButtons a {
+        font-size: 2rem;
+    }
+    .container {
+        width: 100%;
+        padding: 2%;
+    }
+    .top-content {
+        margin-bottom: 20px;
+        flex-direction: column
+    }
+    .top-content .text-container {
+        width: 100%;
+    }
+    .middle-content{
+
+    }
+    .middle-content .boxes {
+        height: 120vh;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .middle-content .boxes .box1{
+        width: 26%;
+        height: 200px;
+        margin: 2%;
+    }
+    .middle-content .boxes .box2{
+        width: 26%;
+        height: 200px;
+        margin: 2%;
+    }
+    .middle-content .boxes .box3{
+        width: 26%;
+        height: 200px;
+        margin: 2%;
+    }
+    .middle-content .boxes .box4{
+        width: 26%;
+        height: 200px;
+        margin: 2%;
+    }
+    .middle-content .boxes .box5{
+        width: 26%;
+        height: 200px;
+        margin: 2%;
+    }
+    .middle-content .boxes .box6{
+        width: 26%;
+        height: 200px;
+        margin: 2%;
+    }
+    .middle-content .boxes .box7{
+        width: 26%;
+        height: 200px;
+        margin: 2%;
+    }
+    .middle-content .boxes .box8{
+        width: 26%;
+        height: 200px;
+        margin: 2%;
+    }
+    .middle-content .boxes .box9{
+        width: 26%;
+        height: 200px;
+        margin: 2%;
+    }
+    .middle-content .boxes .box10{
+        width: 26%;
+        height: 200px;
+        margin: 2%;
+    }
+    .bottom-content{
+        flex-wrap: wrap;
+    }
+    .bottom-content .text-container {
+        padding-right: 4%;
+        width: 40%;
+        padding-bottom: 4%;
+    }
+    footer{
+        display:flex;
+        justify-content:center;
+    } 
+    footer nav{
+        padding: 3%;
+    }
+    footer nav a{
+        font-size: 2.5rem;
+        padding: 2%;
+    }
+    h1, h2, h3, h4, h5 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    p {
+        line-height: 1.4;
+        font-size: 2rem;
+    }
+
+}
+@media (max-width:500px){
+    nav .navButtons {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+    nav .navButtons a {
+        padding: 1%;
+        margin: 0;
+        font-size: 2.5rem;
+    }
+    nav {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin:0;
+        padding: 0;
+    }
+    nav img{
+        flex-direction:column;
+        justify-content:center;
+        width: 100%;
+        padding: 10% 32%;
+    }
+    .middle-content {
+        justify-content: center;
+    }
+    .middle-content .boxes {
+        height: 170vh;
+    }
+    .middle-content h2 {
+        text-align: center;
+    }
+    .middle-content .boxes .box1{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box2{
+        height: 150px;
+        width: 32%;
+        margin:0;
+    }
+    .middle-content .boxes .box3{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box4{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box5{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box6{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box7{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box8{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box9{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box10{
+        height: 150px;
+        width: 32%;
+    }
+    .bottom-content{
+        flex-flow: column;
+        justify-content: center;
+    }
+    .bottom-content .text-container {
+        padding-right: 4%;
+        width: 100%;
+        padding-bottom: 4%;
+    }
+
+
+
 }
