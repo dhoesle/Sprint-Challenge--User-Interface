@@ -56,10 +56,12 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%
+
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -259,7 +261,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
@@ -369,15 +371,19 @@ footer nav a {
         flex-direction: column;
         width: 100%;
         justify-content: center;
-    }
-    nav .navButton a {
         padding: 0;
+    }
+    nav .navButtons a {
+        padding: 1%;
         margin: 0;
+        font-size: 2.5rem;
     }
     nav {
         flex-direction: column;
         width: 100%;
         justify-content: center;
+        margin:0;
+        padding: 0;
     }
     nav img{
         flex-direction:column;
@@ -385,5 +391,79 @@ footer nav a {
         width: 100%;
         padding: 10% 32%;
     }
+    .middle-content {
+        justify-content: center;
+    }
+    .middle-content .boxes {
+        height: 166vh;
+    }
+    .middle-content h2 {
+        text-align: center;
+    }
+    .middle-content .boxes .box1{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box2{
+        height: 150px;
+        width: 32%;
+        margin:0;
+    }
+    .middle-content .boxes .box3{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box4{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box5{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box6{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box7{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box8{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box9{
+        height: 150px;
+        width: 32%;
+    }
+    .middle-content .boxes .box10{
+        height: 150px;
+        width: 32%;
+    }
+    .bottom-content{
+        flex-flow: column;
+        justify-content: center;
+    }
+    .bottom-content .text-container {
+        padding-right: 4%;
+        width: 100%;
+        padding-bottom: 4%;
+    }
+    h1, h2, h3, h4, h5 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    p {
+        line-height: 1.4;
+        font-size: 2rem;
+    }
+    footer nav a{
+        font-size: 2.5rem;
+        padding: 1%;
+    }
+
 
 }
