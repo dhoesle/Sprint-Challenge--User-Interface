@@ -49,6 +49,8 @@ table {
 
 * {
     box-sizing: border-box;
+    border: 1px  gray !important;
+
 }
 
 html, body {
@@ -79,6 +81,40 @@ p {
     border-bottom: 1px dashed black;
 }
 
+nav{
+    width: 45%;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin:1% 1% 0% 1%;
+}
+nav img {
+    display:flex;
+
+}
+nav .navButtons {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 77%;
+}
+nav .navButtons a{
+    display:flex;
+    padding: 4%;
+    margin:
+    justify-content:space-around;
+    text-decoration:none;
+    color:black;
+}
+header {
+    display:flex;
+    justify-content:center;
+}
+.imageContainer {
+    display:flex;
+    justify-content:center;
+    margin: 1% 0% 1% 0%;
+}
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
