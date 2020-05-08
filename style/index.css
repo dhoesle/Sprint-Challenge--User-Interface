@@ -364,3 +364,26 @@ footer nav a {
         justify-content:center;
     }
 }
+@media (max-width:500px){
+    nav .navButtons {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    nav .navButton a {
+        padding: 0;
+        margin: 0;
+    }
+    nav {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    nav img{
+        flex-direction:column;
+        justify-content:center;
+        width: 100%;
+        padding: 10% 32%;
+    }
+
+}
